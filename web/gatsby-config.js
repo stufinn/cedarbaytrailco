@@ -2,8 +2,8 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Sanity Template`,
-    description: `A Template Using Gatsby and Sanity.io`,
+    title: `Cedar Bay Trail Co.`,
+    description: `Cedar Bay Trail Co.'s website`,
     author: `Borealis Web Development`,
   },
   plugins: [
@@ -31,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `borealis-gatsby-sanity`,
-        short_name: `Gatsby Sanity`,
+        name: `cedar-bay-trail-co`,
+        short_name: `CBTC`,
         start_url: `/`,
         background_color: `rgb(18, 47, 111)`,
         theme_color: `rgb(18, 47, 111)`,
@@ -51,7 +51,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-161703481-1",
+        trackingId: "",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: true,
         // Setting this parameter is optional

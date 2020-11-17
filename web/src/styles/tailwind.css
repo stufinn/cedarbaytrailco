@@ -10,4 +10,8 @@ h2 {
   @apply text-3xl;
 }
 
+.buttonLink {
+  @apply text-2xl border-2 border-white rounded-sm p-2 uppercase tracking-wide text-transparent;
+}
+
 @tailwind utilities;

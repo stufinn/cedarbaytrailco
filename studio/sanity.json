@@ -1,11 +1,11 @@
 {
   "root": true,
   "api": {
-    "projectId": "8n88jtx1",
+    "projectId": "lw3f0hpf", 
     "dataset": "production"
   },
   "project": {
-    "name": "Borealis Gatsby Sanity Template"
+    "name": "Cedar Bay Trail Co."
   },
   "plugins": [
     "@sanity/base",

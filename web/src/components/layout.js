@@ -16,9 +16,9 @@ import Footer from "./footer"
 const Layout = ({ children }) => {
   return (
     <>
-      <NavBar />
-      <main className="grid justify-center py-8">{children}</main>
-      <Footer />
+      {/* <NavBar /> */}
+      <main className="grid">{children}</main>
+      {/* <Footer /> */}
     </>
   )
 }

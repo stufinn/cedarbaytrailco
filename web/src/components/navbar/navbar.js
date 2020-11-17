@@ -4,8 +4,10 @@ import { useStaticQuery } from "gatsby"
 
 import NavbarItem from "./NavbarItem"
 
-const NavGridContainer = ({ children }) => (
-  <div className="grid grid-flow-col h-full items-center">{children}</div>
+const NavGridContainer = ({ children, className }) => (
+  <div className={`grid grid-flow-col h-full items-center ${className}`}>
+    {children}
+  </div>
 )
 
 const NavBar = () => {
@@ -14,17 +16,17 @@ const NavBar = () => {
       sanityLogo: sanitySettings {
         logoImage {
           asset {
-            fluid(maxHeight: 200) {
-              ...GatsbySanityImageFluid
+            fixed(height: 500) {
+              ...GatsbySanityImageFixed
             }
           }
         }
       }
 
-      defaultNavLogo: file(relativePath: { eq: "defaultLogo.png" }) {
+      defaultNavLogo: file(relativePath: { eq: "CBTCo_wh.png" }) {
         childImageSharp {
-          fluid(maxHeight: 200) {
-            ...GatsbyImageSharpFluid
+          fixed(height: 500) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -78,12 +80,14 @@ const NavBar = () => {
     <nav>
       {/* navbar logo */}
       {/* desktop nav */}
-      <NavGridContainer>
-        <Img className="w-20" fluid={navLogo.fluid} />
-        <NavbarItem handle="" name="Home" />
+      <NavGridContainer className="bg-black h-64">
+        <div className=" w-56">
+          <Img className="w-full" fixed={navLogo.fixed} />
+        </div>
+        {/* <NavbarItem handle="" name="Home" />
         <NavbarItem handle="about" name="About" />
         <NavbarItem handle="contact" name="Contact" />
-        <NavbarItem name="More" dropdown={[{ name: "One", handle: "#" }]} />
+        <NavbarItem name="More" dropdown={[{ name: "One", handle: "#" }]} /> */}
       </NavGridContainer>
     </nav>
   )
