@@ -28,8 +28,11 @@ const BckgdImage = ({ children, className = null, fluid = null }) => {
   ].reverse()
 
   return (
-    <BackgroundImg fluid={backgroundFluidImageStack}>
-      <div className={`h-screen ${className}`}>{children}</div>
+    <BackgroundImg
+      fluid={backgroundFluidImageStack}
+      className="border border-red-700 h-2/3"
+    >
+      <div className={`${className} border border-green-500 `}>{children}</div>
     </BackgroundImg>
   )
 }

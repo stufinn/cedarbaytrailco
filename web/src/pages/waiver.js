@@ -23,28 +23,31 @@ const WaiverPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Waiver" />
+      {/* <div className=" h-screen"> */}
       <BckgdImage
-        className="flex flex-col row-gap-10 items-center justify-center text-white"
+        className="my-20 flex flex-col row-gap-10 items-center justify-center text-white"
         fluid={waiverBackground.childImageSharp.fluid}
       >
-        <WaiverBox>
-          Before you can rock those trails, you'll need to sign and submit a
-          waiver online.
-          <div>
-            <ButtonLink
-              href="https://www.google.ca"
-              text="Online Waiver"
-              className=""
-            />
-          </div>
-        </WaiverBox>
-        <WaiverBox>
-          Or download, sign, scan and send to waiver@example.com
-          <div>
-            <ButtonLink href="#" text="Download Form" />
-          </div>
-        </WaiverBox>
+        <WaiverBox>Sign a Waiver</WaiverBox>
       </BckgdImage>
+      {/* </div> */}
+      <WaiverBox>
+        Before you can rock those trails, you'll need to sign and submit a
+        waiver online.
+        <div>
+          <ButtonLink
+            href="https://www.google.ca"
+            text="Online Waiver"
+            className=""
+          />
+        </div>
+      </WaiverBox>
+      <WaiverBox>
+        Or download, sign, scan and send to waiver@example.com
+        <div>
+          <ButtonLink href="#" text="Download Form" />
+        </div>
+      </WaiverBox>
     </Layout>
   )
 }

@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <BckgdImage className="flex flex-col row-gap-4 items-center justify-center text-white">
+      <BckgdImage className="h-screen flex flex-col row-gap-4 items-center justify-center text-white">
         <div className="w-3/4 md:w-1/2 lg:w-1/3 ">
           <Img fluid={logo.childImageSharp.fluid} className=" w-full" />
         </div>

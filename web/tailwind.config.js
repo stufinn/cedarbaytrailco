@@ -8,6 +8,13 @@ module.exports = {
       gridTemplateColumns: {
         card: "minmax(150px, 450px) auto",
       },
+      minHeight: {
+        "1/4": "25%",
+        "1/3": "33.33%",
+        "1/2": "50%",
+        "2/3": "66.67%",
+        "3/4": "75%",
+      },
     },
   },
   variants: {

@@ -40,12 +40,12 @@ module.exports = {
         icon: `src/images/Logo-bkgd.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [{ family: `Bebas Neue` }],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [{ family: `Bebas Neue` }],
+    //   },
+    // },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-google-analytics`,
