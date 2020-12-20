@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query IndexQuery {
-    logo: file(relativePath: { eq: "CBTCo_wh.png" }) {
+    logo: file(relativePath: { eq: "CBTCo_wh_hiRes.png" }) {
       id
       childImageSharp {
         fluid {
