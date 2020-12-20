@@ -30,9 +30,9 @@ const BckgdImage = ({ children, className = null, fluid = null }) => {
   return (
     <BackgroundImg
       fluid={backgroundFluidImageStack}
-      className="border border-red-700 h-2/3"
+      className=""
     >
-      <div className={`${className} border border-green-500 `}>{children}</div>
+      <div className={`${className} `}>{children}</div>
     </BackgroundImg>
   )
 }

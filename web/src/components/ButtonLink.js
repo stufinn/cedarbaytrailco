@@ -3,7 +3,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const styles =
-  "text-2xl border-4 font-bold border-white rounded-md p-2 uppercase tracking-wide hover:text-black hover:bg-white"
+  "text-2xl border-4 font-bold rounded-md p-2 uppercase tracking-wide hover:text-black "
 
 export default ({ to = null, href = null, text = "", className = "" }) => {
   // combine classes before inserting

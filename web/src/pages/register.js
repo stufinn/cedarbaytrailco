@@ -17,7 +17,7 @@ const WaiverBox = ({ children, className }) => {
   )
 }
 
-const WaiverPage = ({ data }) => {
+const Register = ({ data }) => {
   const { logo } = data
   const { waiverBackground } = data
   return (
@@ -32,11 +32,20 @@ const WaiverPage = ({ data }) => {
       </BckgdImage>
       {/* </div> */}
       <WaiverBox>
-        Before you can rock those trails, you'll need to sign and submit a
-        waiver online.
+      <p>Welcome to the 2020-21 Fatbike season!  Registration is now open.</p>
+
+<p>Our membership fees are as follows:<br/>
+Single Fatbike                   $75.00<br/>
+Family Fatbike                 $120.00<br/>
+Single Snowshoe User      $20.00 <br/>
+Snowshoe Family              $40.00</p>
+
+Registering for the season is a simple two step process.
+ 1/  E-Transfer the annual fee to cedarbaytrailcompany@gmail.com
+ 2/  Sign the release at waiversign.   When completing the waiver you must tap on the "Initial" or "signature"  boxes to auto populate these areas. 
         <div>
           <ButtonLink
-            href="https://www.google.ca"
+            href="https://app.waiversign.com/e/5f995bf516eb010019446497/doc/5f99742ad56fea00190cafa3?event=none"
             text="Online Waiver"
             className=""
           />
@@ -75,4 +84,4 @@ export const query = graphql`
   }
 `
 
-export default WaiverPage
+export default Register

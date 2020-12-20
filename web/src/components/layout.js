@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
     <>
       {/* <NavBar /> */}
       <main className="grid">{children}</main>
-      {/* <Footer /> */}
+      <Footer className="bg-black text-white  p-8 grid grid-cols-3" />
     </>
   )
 }
