@@ -25,7 +25,7 @@ const Register = ({ data }) => {
       <SEO title="Waiver" />
       {/* <div className=" h-screen"> */}
       <BckgdImage
-        className="my-20 flex flex-col row-gap-10 items-center justify-center text-white"
+        className=" h-screen my-20 flex flex-col row-gap-10 items-center justify-center text-white"
         fluid={waiverBackground.childImageSharp.fluid}
       >
         <WaiverBox>Sign a Waiver</WaiverBox>
