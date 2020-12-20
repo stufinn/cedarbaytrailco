@@ -40,7 +40,7 @@ Family Fatbike                 $120.00<br/>
 Single Snowshoe User      $20.00 <br/>
 Snowshoe Family              $40.00</p>
 
-Registering for the season is a simple two step process.
+<p>Registering for the season is a simple two step process.</p>
  1/  E-Transfer the annual fee to cedarbaytrailcompany@gmail.com
  2/  Sign the release at waiversign.   When completing the waiver you must tap on the "Initial" or "signature"  boxes to auto populate these areas. 
         <div>
