@@ -22,9 +22,9 @@ const IndexPage = ({ data }) => {
       </BckgdImage>
       <div className=" bg-gray-200">
         <div className="grid  items-center col-span-2  justify-self-center m-10">
-          <h1 className="text-5xl text-center">Hold up!<br/>Before you use those sick trails, you'll need to register.</h1>
+          <h1 className="text-5xl text-center font-semibold">Before hitting the trails, please register with Cedar Bay Trail Co.</h1>
 
-          <ButtonLink to="/registration" className="font-bold text-white  border-orange-600 bg-orange-600 justify-self-center  hover:bg-white hover:text-orange-600 mt-10 " text="Register Now" />
+          <ButtonLink to="/register" className="font-bold text-white  border-orange-600 bg-orange-600 justify-self-center  hover:bg-white hover:text-orange-600 mt-10 " text="Let's Do This" />
         </div>
         <div>
           
