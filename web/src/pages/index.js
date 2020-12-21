@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
         </div>
         
       </BckgdImage>
-      <div className=" bg-gray-200">
+      <div className="bg-gray-200">
         <div className="grid  items-center col-span-2  justify-self-center m-10">
           <h1 className="text-5xl text-center font-semibold">Before hitting the trails, please register with Cedar Bay Trail Co.</h1>
 

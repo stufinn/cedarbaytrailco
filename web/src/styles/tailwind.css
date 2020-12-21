@@ -2,6 +2,21 @@
 @tailwind components;
 
 /* custom css can go here. Compiled via "watch" or "tailwind" scripts */
+
+/* This forces the page to take up the full page (without whitespace at the bottom) */
+/* https://jordanwarren.dev/full-window-height-pages-in-gatsby/ */
+html {
+  height:100%
+}
+
+
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+
 h1 {
   @apply text-6xl;
 }

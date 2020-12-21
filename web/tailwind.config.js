@@ -8,6 +8,9 @@ module.exports = {
       gridTemplateColumns: {
         card: "minmax(150px, 450px) auto",
       },
+      gridTemplateRows: {
+        layout: "1fr auto"
+      },
       minHeight: {
         "1/4": "25%",
         "1/3": "33.33%",
