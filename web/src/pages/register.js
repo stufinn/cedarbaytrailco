@@ -54,12 +54,14 @@ const Register = ({ data }) => {
           className="flex flex-col row-gap-10 items-center justify-center text-white h-400px relative"
           fluid={waiverBackground.childImageSharp.fluid}
         >
-          <h1 className="leading-none mt-20  font-semibold">Registration</h1>
-          <div className="flex fixed top-0 right-0 font-semibold mt-4 mr-4 col-gap-4">
+          <h1 className="leading-none mt-20  font-semibold">
+            Register for Cedar Bay Trail Co.
+          </h1>
+          <div className="flex absolute top-0 right-0 font-semibold mt-4 mr-4 col-gap-4">
             <Link activeClassName="underline" to="/">
               Home
             </Link>
-            <Link to="/registration">Registration</Link>
+            <Link to="/register">Registration</Link>
           </div>
         </BackgroundImage>
         {/* Main Content */}
@@ -68,7 +70,8 @@ const Register = ({ data }) => {
           {/* <div className="m-20 lg:w-1/2 justify-self-center"> */}
           <PageSection className="mb-20">
             <h2 className="text-5xl text-center font-semibold">
-              Welcome to the 2020-21 Fatbike season! Registration is now open.
+              Welcome to the 2020-21 Fatbike and Snowshoe season! Registration
+              is now open.
             </h2>
           </PageSection>
           <PageSection className="text-3xl bg-gray-500 text-white py-10">
