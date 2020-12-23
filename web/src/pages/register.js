@@ -102,7 +102,7 @@ const Register = ({ data }) => {
                 </ExternalLink>
                 .<span className="text-red-600">*</span> <br />
                 <Emph>or</Emph>
-                <ExternalLink href="https://app.waiversign.com/e/5f995bf516eb010019446497/doc/5f99742ad56fea00190cafa3?event=none">
+                <ExternalLink href="#">
                   Download and print the waiver form
                 </ExternalLink>
                 , sign it, scan it and send it to{" "}
