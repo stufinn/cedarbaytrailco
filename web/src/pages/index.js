@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 import {IoLogoFacebook} from "react-icons/io"
 
 import Layout from "../components/layout"
-import BckgdImage from "../components/backgroundImage"
+import BackgroundImage from "../components/backgroundImage"
 import ButtonLink from "../components/ButtonLink"
 
 const IndexPage = ({ data }) => {
@@ -14,12 +14,12 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
 
-      <BckgdImage className="flex flex-col row-gap-4 items-center justify-center text-white py-10 shadow-xl">
+      <BackgroundImage className="flex flex-col row-gap-4 items-center justify-center text-white py-10 shadow-xl">
         <div className="w-3/4 md:w-1/2 lg:w-1/3">
           <Img fluid={logo.childImageSharp.fluid} className=" w-full" />
         </div>
         
-      </BckgdImage>
+      </BackgroundImage>
       <div className="bg-gray-200">
         <div className="grid  items-center col-span-2  justify-self-center m-10">
           <h1 className="text-5xl text-center font-semibold">Before hitting the trails, please register with Cedar Bay Trail Co.</h1>

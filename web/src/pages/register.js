@@ -4,59 +4,121 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
-import BckgdImage from "../components/backgroundImage"
+import BackgroundImage from "../components/backgroundImage"
 import ButtonLink from "../components/ButtonLink"
 
-const WaiverBox = ({ children, className }) => {
-  return (
-    <div
-      className={`grid items-center row-gap-5 text-4xl w-1/2 text-center  tracking-wide font-bold bg-black bg-opacity-50 rounded-md p-5 ${className}`}
-    >
-      {children}
-    </div>
-  )
-}
+const H3 = ({ children }) => (
+  <h3 className="font-semibold mb-5 text-4xl">{children}</h3>
+)
+
+const Li = ({ children, className = "" }) => (
+  <li className={`mt-2 mb-5 ${className}`}>{children}</li>
+)
+
+const ExternalLink = ({
+  children = "EXTERNAL LINK TEXT",
+  href = "#",
+  className = "",
+}) => (
+  <a
+    href={`${href}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`text-blue-700 underline hover:text-indigo-700 ${className}`}
+  >
+    {children}
+  </a>
+)
+
+const Emph = ({ children, className = "" }) => (
+  <div className={`font-bold mb-2 ${className}`}>{children}</div>
+)
 
 const Register = ({ data }) => {
   const { logo } = data
   const { waiverBackground } = data
   return (
     <Layout>
-      <SEO title="Waiver" />
-      {/* <div className=" h-screen"> */}
-      <BckgdImage
-        className="my-20 flex flex-col row-gap-10 items-center justify-center text-white"
-        fluid={waiverBackground.childImageSharp.fluid}
-      >
-        <WaiverBox>Sign a Waiver</WaiverBox>
-      </BckgdImage>
-      {/* </div> */}
-      <WaiverBox>
-      <p>Welcome to the 2020-21 Fatbike season!  Registration is now open.</p>
-
-<p>Our membership fees are as follows:<br/>
-Single Fatbike                   $75.00<br/>
-Family Fatbike                 $120.00<br/>
-Single Snowshoe User      $20.00 <br/>
-Snowshoe Family              $40.00</p>
-
-Registering for the season is a simple two step process.
- 1/  E-Transfer the annual fee to cedarbaytrailcompany@gmail.com
- 2/  Sign the release at waiversign.   When completing the waiver you must tap on the "Initial" or "signature"  boxes to auto populate these areas. 
-        <div>
-          <ButtonLink
-            href="https://app.waiversign.com/e/5f995bf516eb010019446497/doc/5f99742ad56fea00190cafa3?event=none"
-            text="Online Waiver"
-            className=""
-          />
+      <div>
+        <SEO title="Registration" />
+        {/* <div className=" h-screen"> */}
+        <BackgroundImage
+          className="flex flex-col row-gap-10 items-center justify-center text-white h-400px"
+          fluid={waiverBackground.childImageSharp.fluid}
+        >
+          <h1 className="leading-none mt-20  font-semibold">Registration</h1>
+        </BackgroundImage>
+        {/* Main Content */}
+        <div className="grid">
+          {/* Inner, "floating" container */}
+          <div className="m-20 lg:w-1/2 justify-self-center">
+            <section className="text-3xl mt-10">
+              <h2 className="text-5xl text-center font-semibold">
+                Welcome to the 2020-21 Fatbike season! Registration is now open.
+              </h2>
+              <div className="mt-5">
+                <H3>Our membership fees are as follows:</H3>
+                <ul className="list-disc ml-16">
+                  <Li>Single Fatbike $75.00</Li>
+                  <Li>Family Fatbike $120.00</Li>
+                  <Li>Single Snowshoe User $20.00</Li>
+                  <Li>Snowshoe Family $40.00</Li>
+                </ul>
+              </div>
+            </section>
+            <section className="text-3xl mt-10">
+              <H3>Registering for the season is a simple two step process.</H3>
+              <ol className="ml-16">
+                <Li>
+                  <Emph>Step 1:</Emph> E-Transfer the annual fee to{" "}
+                  <ExternalLink href="mailto:cedarbaytrailcompany@gmail.com">
+                    {/* Hidden space allows for line breaking of email address on smaller screens */}
+                    <span className="">
+                      cedarbaytrailcompany<span className="lg:hidden"> </span>
+                      @gmail.com
+                    </span>
+                  </ExternalLink>
+                </Li>
+                <Li>
+                  <Emph>Step 2:</Emph> Sign the release{" "}
+                  <ExternalLink href="https://app.waiversign.com/e/5f995bf516eb010019446497/doc/5f99742ad56fea00190cafa3?event=none">
+                    over at waiversign
+                  </ExternalLink>
+                  <span className="text-red-600">*</span> or{" "}
+                  <ExternalLink href="https://app.waiversign.com/e/5f995bf516eb010019446497/doc/5f99742ad56fea00190cafa3?event=none">
+                    download the waiver form
+                  </ExternalLink>
+                  , sign, scan and send it to{" "}
+                  <ExternalLink href="mailto:cedarbaytrailcompany@gmail.com">
+                    {/* Hidden space allows for line breaking of email address on smaller screens */}
+                    <span className="">
+                      cedarbaytrailcompany<span className="lg:hidden"> </span>
+                      @gmail.com
+                    </span>
+                  </ExternalLink>
+                </Li>
+                <Li>
+                  <Emph>Step 3:</Emph> Hit the Trails!
+                </Li>
+              </ol>
+              <div className="mt-12">
+                <span className="text-red-600">*</span>
+                <span className="italic">
+                  When completing the waiver you must tap on the "Initial" or
+                  "signature" boxes to auto populate these areas.
+                </span>
+              </div>
+            </section>
+            {/* <div>
+              <ButtonLink
+                href="https://app.waiversign.com/e/5f995bf516eb010019446497/doc/5f99742ad56fea00190cafa3?event=none"
+                text="Online Waiver"
+                className=""
+              />
+            </div> */}
+          </div>
         </div>
-      </WaiverBox>
-      <WaiverBox>
-        Or download, sign, scan and send to waiver@example.com
-        <div>
-          <ButtonLink href="#" text="Download Form" />
-        </div>
-      </WaiverBox>
+      </div>
     </Layout>
   )
 }

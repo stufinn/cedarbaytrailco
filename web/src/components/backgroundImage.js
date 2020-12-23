@@ -2,9 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImg from "gatsby-background-image"
 
-const BckgdImage = ({ children, className = null, fluid = null }) => {
+const BackgroundImage = ({ children, className = null, fluid = null }) => {
   const data = useStaticQuery(graphql`
-    query BckgdImageQuery {
+    query BackgroundImageQuery {
       backgroundImage: file(
         relativePath: { eq: "tim-foster-RI5vBBS77fQ-unsplash.jpg" }
       ) {
@@ -37,4 +37,4 @@ const BckgdImage = ({ children, className = null, fluid = null }) => {
   )
 }
 
-export default BckgdImage
+export default BackgroundImage
