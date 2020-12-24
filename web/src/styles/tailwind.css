@@ -6,16 +6,14 @@
 /* This forces the page to take up the full page (without whitespace at the bottom) */
 /* https://jordanwarren.dev/full-window-height-pages-in-gatsby/ */
 html {
-  height:100%
+  height: 100%;
 }
-
 
 body,
 #___gatsby,
 #gatsby-focus-wrapper {
   height: 100%;
 }
-
 
 h1 {
   @apply text-6xl;
@@ -27,6 +25,10 @@ h2 {
 
 .buttonLink {
   @apply text-2xl border-2 border-white rounded-sm p-2 uppercase tracking-wide text-transparent;
+}
+
+.activeNavLink {
+  @apply border-b-2 border-white;
 }
 
 @tailwind utilities;

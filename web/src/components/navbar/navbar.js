@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Img from "gatsby-image"
-import { useStaticQuery } from "gatsby"
+import { Link, useStaticQuery } from "gatsby"
 
 import NavbarItem from "./NavbarItem"
 
@@ -77,18 +77,26 @@ const NavBar = () => {
   ]
 
   return (
-    <nav>
+    <nav className=" absolute z-10 grid grid-flow-col col-gap-5 w-full text-white  mt-2 pr-10 justify-end font-bold uppercase tracking-wide ">
       {/* navbar logo */}
       {/* desktop nav */}
-      <NavGridContainer className="bg-black h-64">
-        <div className=" w-56">
+      {/* <NavGridContainer className=" bg-none h-64"> */}
+      {/* <div className=" w-56">
           <Img className="w-full" fixed={navLogo.fixed} />
-        </div>
-        {/* <NavbarItem handle="" name="Home" />
+        </div> */}
+      <Link to="/" activeClassName="activeNavLink" className="px-1">
+        Home
+      </Link>
+      <Link to="/register" activeClassName="activeNavLink" className="px-1">
+        {" "}
+        Register
+      </Link>
+
+      {/* <NavbarItem handle="" name="Home" />
         <NavbarItem handle="about" name="About" />
         <NavbarItem handle="contact" name="Contact" />
         <NavbarItem name="More" dropdown={[{ name: "One", handle: "#" }]} /> */}
-      </NavGridContainer>
+      {/* </NavGridContainer> */}
     </nav>
   )
 }
