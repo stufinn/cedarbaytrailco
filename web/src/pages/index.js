@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
 
           <ButtonLink
             to="/register"
-            className="font-bold text-white  border-orange-600 bg-orange-600 justify-self-center  hover:bg-white hover:text-orange-600 mt-10 "
+            className=" font-extrabold text-white  border-orange-600 bg-orange-600 justify-self-center  hover:bg-white hover:text-orange-600 mt-10 "
             text="Let's Do This"
           />
         </div>
