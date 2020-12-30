@@ -23,11 +23,10 @@ const IndexPage = ({ data }) => {
       <div className="bg-gray-200 grid">
         <div className=" grid  items-center col-span-2  justify-self-center mx-3 md:mx-10 my-16  py-12  ">
           <h1 className="text-primary  text-center font-semibold text-5xl ">
-            <span className="md:text-6xl">Welcome to Cedar Bay Trail Co.!</span>
+            <span className="md:text-6xl">Welcome to Cedar Bay Trail Co.</span>
           </h1>
           <p className="text-4xl text-center mt-8">
-            Before hitting the trails, please register online with
-            Cedar&nbsp;Bay Trail&nbsp;Co.
+            Before hitting the trails, please register online!
           </p>
           <ButtonLink
             to="/register"

@@ -70,16 +70,14 @@ const Register = ({ data }) => {
           {/* <div className="m-20 lg:w-1/2 justify-self-center"> */}
           <PageSection className="mb-20">
             <h2 className="text-5xl text-center font-semibold">
-              Welcome to the 2020-2021 Fatbike &amp; Snowshoe season!
-            </h2>
-            <h2 className="text-5xl text-center font-semibold pt-5">
-              Registration is now open.
+              Registration for the 2020-2021 Fatbike &amp; Snowshoe season is
+              now open!
             </h2>
           </PageSection>
-          <PageSection className="text-3xl bg-gray-500 text-white py-10">
-            <div className="mt-5">
+          <PageSection className="text-3xl bg-gray-400 text-white py-10">
+            <div className="mt-5 grid ">
               <H3>Our 2020-2021 membership fees are as&nbsp;follows:</H3>
-              <ul className="list-disc">
+              <ul className="list-disc justify-self-center">
                 <Li>Single Fatbike - $75.00</Li>
                 <Li>Family Fatbike - $120.00</Li>
                 <Li>Single Snowshoe User - $20.00</Li>
