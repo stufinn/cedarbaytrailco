@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
 
-      <BackgroundImage className="flex flex-col row-gap-4 items-center justify-center text-white  shadow-xl">
+      <BackgroundImage className="flex flex-col items-center justify-center text-white  shadow-xl">
         <div className="w-3/4 md:w-1/2   min-h-50vh grid items-center my-10">
           <Img fluid={logo.childImageSharp.fluid} className="w-full" />
         </div>
@@ -22,11 +22,13 @@ const IndexPage = ({ data }) => {
 
       <div className="bg-gray-200 grid">
         <div className=" grid  items-center col-span-2  justify-self-center mx-10 my-16 px-10 py-12  ">
-          <h1 className="  text-primary  text-center font-semibold text-5xl ">
-            Before hitting the trails, please register with Cedar&nbsp;Bay
-            Trail&nbsp;Co.
+          <h1 className="text-primary  text-center font-semibold text-5xl ">
+            <span className="text-6xl">Welcome to Cedar Bay Trail Co.!</span>
           </h1>
-
+          <p className="text-4xl text-center mt-8">
+            Before hitting the trails, please register online with
+            Cedar&nbsp;Bay Trail&nbsp;Co.
+          </p>
           <ButtonLink
             to="/register"
             className=" text-4xl font-extrabold text-white  border-orange-600 bg-orange-600 justify-self-center  hover:bg-white hover:text-orange-600 mt-10 px-8"

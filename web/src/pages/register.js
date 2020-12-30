@@ -55,7 +55,7 @@ const Register = ({ data }) => {
         <SEO title="Registration" />
         {/* <div className=" h-screen"> */}
         <BackgroundImage
-          className="flex flex-col row-gap-10 items-center justify-center text-white h-400px relative"
+          className="flex flex-col items-center justify-center text-white h-400px relative"
           fluid={waiverBackground.childImageSharp.fluid}
         >
           <h1 className="leading-none mt-20  font-semibold text-center mx-3">

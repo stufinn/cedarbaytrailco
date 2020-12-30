@@ -77,7 +77,7 @@ const NavBar = () => {
   ]
 
   return (
-    <nav className=" absolute z-10 grid grid-flow-col col-gap-5 w-full text-white  md:text-xl mt-2 pr-10 justify-end font-bold uppercase tracking-wide ">
+    <nav className=" absolute z-10 grid grid-flow-col gap-x-5 w-full text-white  md:text-xl mt-2 pr-10 justify-end font-bold uppercase tracking-wide ">
       {/* navbar logo */}
       {/* desktop nav */}
       {/* <NavGridContainer className=" bg-none h-64"> */}
