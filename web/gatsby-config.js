@@ -37,7 +37,7 @@ module.exports = {
         background_color: `rgb(18, 47, 111)`,
         theme_color: `rgb(18, 47, 111)`,
         display: `minimal-ui`,
-        icon: `src/images/Logo-bkgd.png`, // This path is relative to the root of the site.
+        icon: `src/images/CBTCo_square.png`, // This path is relative to the root of the site.
       },
     },
     // {
@@ -47,7 +47,7 @@ module.exports = {
     //   },
     // },
     `gatsby-plugin-postcss`,
-     // this (optional) plugin enables Progressive Web App + Offline functionality // To learn more, visit: https://gatsby.dev/offline
+    // this (optional) plugin enables Progressive Web App + Offline functionality // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
 }
