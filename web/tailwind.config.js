@@ -9,7 +9,7 @@ module.exports = {
         card: "minmax(150px, 450px) auto",
       },
       gridTemplateRows: {
-        layout: "1fr auto"
+        layout: "auto 1fr auto",
       },
       minHeight: {
         "1/4": "25%",
@@ -17,11 +17,11 @@ module.exports = {
         "1/2": "50%",
         "2/3": "66.67%",
         "3/4": "75%",
+        "50vh": "50vh",
       },
       height: {
-        "400px":"400px",
-      }
-      
+        "400px": "400px",
+      },
     },
   },
   variants: {

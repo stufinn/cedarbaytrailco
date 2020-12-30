@@ -14,22 +14,23 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
 
-      <BackgroundImage className="flex flex-col row-gap-4 items-center justify-center text-white py-10 shadow-xl">
-        <div className="w-3/4 md:w-1/2 lg:w-1/3">
-          <Img fluid={logo.childImageSharp.fluid} className=" w-full" />
+      <BackgroundImage className="flex flex-col row-gap-4 items-center justify-center text-white  shadow-xl">
+        <div className="w-3/4 md:w-1/2   min-h-50vh grid items-center my-10">
+          <Img fluid={logo.childImageSharp.fluid} className="w-full" />
         </div>
       </BackgroundImage>
-      <div className="bg-gray-200">
-        <div className="grid  items-center col-span-2  justify-self-center  m-5 lg:m-10">
-          <h1 className="text-4xl lg:text-5xl text-center font-semibold md:w-4/5 lg:w-4/5 xl:w-3/5 justify-self-center">
+
+      <div className="bg-gray-200 grid">
+        <div className=" grid  items-center col-span-2  justify-self-center mx-10 my-16 px-10 py-12  ">
+          <h1 className="  text-primary  text-center font-semibold text-5xl ">
             Before hitting the trails, please register with Cedar&nbsp;Bay
             Trail&nbsp;Co.
           </h1>
 
           <ButtonLink
             to="/register"
-            className=" font-extrabold text-white  border-orange-600 bg-orange-600 justify-self-center  hover:bg-white hover:text-orange-600 mt-10 "
-            text="Let's Do This"
+            className=" text-4xl font-extrabold text-white  border-orange-600 bg-orange-600 justify-self-center  hover:bg-white hover:text-orange-600 mt-10 px-8"
+            text="REGISTER NOW"
           />
         </div>
         <div></div>

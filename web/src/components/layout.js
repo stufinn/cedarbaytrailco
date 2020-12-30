@@ -16,10 +16,10 @@ import Footer from "./footer"
 const Layout = ({ children }) => {
   return (
     // <div className="grid h-full">
-    <div className="grid  grid-rows-layout relative">
+    <div className="grid grid-rows-layout relative h-full">
       <NavBar />
       <main className="grid">{children}</main>
-      <Footer className=" bg-black text-white text-2xl grid p-5 justify-center z-0" />
+      <Footer className=" bg-black text-white text-2xl grid p-5 justify-center" />
     </div>
   )
 }
