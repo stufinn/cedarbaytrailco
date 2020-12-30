@@ -42,8 +42,8 @@ const Emph = ({ children, className = "" }) => (
 )
 
 const PageSection = ({ children, className = "" }) => (
-  <div className={` ${className}`}>
-    <div className={`flex mx-10  lg:mx-32 justify-center`}>
+  <div className={`pl-5 ${className}`}>
+    <div className={`flex mx-3 md:mx-10 lg:mx-32 justify-center`}>
       <div className="">{children}</div>
     </div>
   </div>
@@ -60,8 +60,8 @@ const Register = ({ data }) => {
         <SEO title="Registration" />
         {/* <div className=" h-screen"> */}
         <Hero fluid={waiverBackground.childImageSharp.fluid}>
-          <h1 className="leading-none mt-20  font-semibold text-center mx-3">
-            Register for Cedar Bay Trail Co.
+          <h1 className="leading-none mt-10 font-semibold text-center mx-3">
+            2020-21 Registration
           </h1>
         </Hero>
         {/* Main Content */}
@@ -79,7 +79,7 @@ const Register = ({ data }) => {
           <PageSection className="text-3xl bg-gray-500 text-white py-10">
             <div className="mt-5">
               <H3>Our 2020-2021 membership fees are as&nbsp;follows:</H3>
-              <ul className="list-disc ml-16">
+              <ul className="list-disc">
                 <Li>Single Fatbike - $75.00</Li>
                 <Li>Family Fatbike - $120.00</Li>
                 <Li>Single Snowshoe User - $20.00</Li>
