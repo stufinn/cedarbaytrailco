@@ -2,6 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import BackgroundImg from "gatsby-background-image"
 
+// A pre-set background image component, with a default image baked in, if fluid = null
+//  props: fluid (takes image data), className (passed-in tailwind classes), children
+
 const BackgroundImage = ({ children, className = null, fluid = null }) => {
   const data = useStaticQuery(graphql`
     query BackgroundImageQuery {
@@ -28,10 +31,7 @@ const BackgroundImage = ({ children, className = null, fluid = null }) => {
   ].reverse()
 
   return (
-    <BackgroundImg
-      fluid={backgroundFluidImageStack}
-      className=""
-    >
+    <BackgroundImg fluid={backgroundFluidImageStack} className="">
       <div className={`${className} `}>{children}</div>
     </BackgroundImg>
   )

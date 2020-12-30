@@ -4,8 +4,8 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
-import BackgroundImage from "../components/backgroundImage"
 import ButtonLink from "../components/ButtonLink"
+import Hero from "../components/Hero"
 
 const linkStyle = "hover:text-yellow-500"
 
@@ -59,14 +59,11 @@ const Register = ({ data }) => {
       <div>
         <SEO title="Registration" />
         {/* <div className=" h-screen"> */}
-        <BackgroundImage
-          className="flex flex-col items-center justify-center text-white h-400px relative"
-          fluid={waiverBackground.childImageSharp.fluid}
-        >
+        <Hero fluid={waiverBackground.childImageSharp.fluid}>
           <h1 className="leading-none mt-20  font-semibold text-center mx-3">
             Register for Cedar Bay Trail Co.
           </h1>
-        </BackgroundImage>
+        </Hero>
         {/* Main Content */}
         <div className="grid py-20">
           {/* Inner, "floating" container */}
