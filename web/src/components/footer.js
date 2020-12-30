@@ -16,11 +16,16 @@ export default ({ className }) => {
         </a> */}
 
       <div className="grid gap-y-3 text-center">
-        <div>© {new Date().getFullYear()}, Cedar Bay Trail Co.</div>
-        <div className="flex">
-          Made with&nbsp;
-          <FaHeart className=" self-center" />
-          &nbsp;by&nbsp;
+        <div className="">
+          © {new Date().getFullYear()}, Cedar Bay Trail Co.
+        </div>
+        <hr className="my-2" />
+        <div className="flex flex-col md:flex-row items-center gap-y-1">
+          <span className="flex">
+            Made with &#160;
+            <FaHeart />
+            &#160;by&#160;
+          </span>
           <a
             href="https://www.borealisweb.ca"
             target="__blank"
@@ -30,6 +35,21 @@ export default ({ className }) => {
             Borealis Web Development
           </a>
         </div>
+        {/* <div className="flex-col md:flex-row">
+          <span>Made with&nbsp;</span>
+          <div className="grid justify-center">
+            <FaHeart className=" self-center" />
+          </div>
+          &nbsp;by&nbsp;
+          <a
+            href="https://www.borealisweb.ca"
+            target="__blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-green-400 hover:text-bold"
+          >
+            Borealis Web Development
+          </a>
+        </div> */}
         {/* <a
           href="#"
           className="footer__CMS settings__link"
