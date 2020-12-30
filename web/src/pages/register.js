@@ -7,8 +7,10 @@ import Layout from "../components/layout"
 import BackgroundImage from "../components/backgroundImage"
 import ButtonLink from "../components/ButtonLink"
 
+const linkStyle = "hover:text-yellow-500"
+
 const H3 = ({ children, className }) => (
-  <h3 className={`font-semibold mb-5 text-5xl text-center ${className}`}>
+  <h3 className={`font-semibold mb-5 text-5xl text-center  ${className}`}>
     {children}
   </h3>
 )
@@ -26,7 +28,7 @@ const ExternalLink = ({
     href={`${href}`}
     target="_blank"
     rel="noopener noreferrer"
-    className={` underline hover:font-bold ${className}`}
+    className={` underline hover:font-bold ${linkStyle} ${className}`}
   >
     {children}
   </a>

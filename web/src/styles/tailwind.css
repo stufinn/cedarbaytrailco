@@ -28,7 +28,7 @@ h2 {
 }
 
 .activeNavLink {
-  @apply border-b-2 border-white;
+  @apply border-b-2 border-yellow-600 text-yellow-600;
 }
 
 @tailwind utilities;

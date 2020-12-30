@@ -25,7 +25,7 @@ export default ({ className }) => {
             href="https://www.borealisweb.ca"
             target="__blank"
             rel="noopener noreferrer"
-            className="underline hover:text-green-600 hover:text-bold"
+            className="underline hover:text-green-400 hover:text-bold"
           >
             Borealis Web Development
           </a>
