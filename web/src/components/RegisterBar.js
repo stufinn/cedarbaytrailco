@@ -14,7 +14,6 @@ const RegisterBar = ({ className }) => {
         >
           register online
         </LinkInternal>
-        .
       </div>
     </section>
   )

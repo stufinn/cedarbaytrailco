@@ -26,14 +26,17 @@ const IndexPage = ({ data }) => {
       <RegisterBar className=" " />
       <div className="bg-gray-200 grid">
         <div className=" grid items-center w-full  justify-self-center px-3 md:px-10 my-16 ">
-          <h1 className="text-primary  text-center font-semibold text-5xl mb-10 leading-normal">
-            <span className="md:text-6xl ">
-              Welcome to our new website!
+          <h1 className="text-primary  text-center font-semibold text-5xl  leading-normal">
+            <span className="md:text-6xl">
+              Welcome!
               <br />
-              <span className="italic">✨ more features coming soon ✨</span>
             </span>
           </h1>
-          <div className=" w-5/6 lg:w-3/4 justify-self-center">
+          <p className="italic font-bold text-center text-3xl mt-3 ">
+            Additional features coming soon: <br />
+            Trail condition reports, Event updates, and more!
+          </p>
+          <div className=" w-5/6 lg:w-3/4 justify-self-center mt-10">
             {/* Trail Map */}
             <TrailMap className=" " />
             {/* Trail Map End */}
@@ -44,7 +47,7 @@ const IndexPage = ({ data }) => {
           </div>
 
           <p className="text-4xl text-center mt-8">
-            Before hitting the trails, please register online!
+            Before hitting the trails, please register online
           </p>
           <ButtonLink
             to="/register"
