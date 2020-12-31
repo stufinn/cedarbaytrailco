@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
     <div className="grid grid-rows-layout relative h-full">
       <NavBar />
       <main className="grid">{children}</main>
-      <Footer className=" bg-black text-white text-2xl grid p-5 justify-center" />
+      <Footer className=" bg-black text-white text-2xl  " />
     </div>
   )
 }
