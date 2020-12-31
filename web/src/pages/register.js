@@ -104,23 +104,22 @@ const Register = ({ data }) => {
               <Li>
                 <Emph>Step 2:</Emph>
                 <IndentedItem>
-                  Sign the release{" "}
                   <ExternalLink href="https://app.waiversign.com/e/5f995bf516eb010019446497/doc/5f99742ad56fea00190cafa3?event=none">
-                    over at waiversign
+                    Sign and submit the online waiver
                   </ExternalLink>
                   .<span className="text-red-600">*</span> <br />
-                  <div className="ml-2 font-bold my-5">or</div>
-                  <ExternalLink href="#">
+                  {/* <div className="ml-2 font-bold my-5">or</div> */}
+                  {/* <ExternalLink href="#">
                     Download and print the waiver form
-                  </ExternalLink>
-                  , sign it, scan it and send it to{" "}
-                  <ExternalLink href="mailto:cedarbaytrailcompany@gmail.com">
-                    {/* Hidden space allows for line breaking of email address on smaller screens */}
-                    <span className="">
-                      cedarbaytrailcompany<span className="lg:hidden"> </span>
-                      @gmail.com
-                    </span>
-                  </ExternalLink>
+                  </ExternalLink> */}
+                  {/* , sign it, scan it and send it to{" "} */}
+                  {/* <ExternalLink href="mailto:cedarbaytrailcompany@gmail.com"> */}
+                  {/* Hidden space allows for line breaking of email address on smaller screens */}
+                  {/* <span className=""> */}
+                  {/* cedarbaytrailcompany<span className="lg:hidden"> </span> */}
+                  {/* @gmail.com */}
+                  {/* </span> */}
+                  {/* </ExternalLink> */}
                 </IndentedItem>
                 <div className="mt-12 text-2xl">
                   <span className="text-red-600 ">*</span>
