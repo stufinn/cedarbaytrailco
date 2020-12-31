@@ -7,6 +7,7 @@ import { IoLogoFacebook } from "react-icons/io"
 import Layout from "../components/layout"
 import BackgroundImage from "../components/backgroundImage"
 import ButtonLink from "../components/ButtonLink"
+import RegisterBar from "../components/registerBar"
 
 const IndexPage = ({ data }) => {
   const { logo } = data
@@ -20,6 +21,7 @@ const IndexPage = ({ data }) => {
         </div>
       </BackgroundImage>
 
+      <RegisterBar className=" " />
       <div className="bg-gray-200 grid">
         <div className=" grid  items-center col-span-2  justify-self-center mx-3 md:mx-10 my-16  py-12  ">
           <h1 className="text-primary  text-center font-semibold text-5xl ">
