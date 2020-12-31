@@ -35,7 +35,7 @@ const Li = ({ children, className = "grid" }) => (
 //   </a>
 // )
 
-const Emph = ({ children, className = "" }) => (
+const Emph = ({ children, className = "uppercase trackng-wide" }) => (
   <div className={`font-bold mb-2 ${className}   mt-10 text-4xl p-3`}>
     {children}
     <div className="border-b-2 mt-1 w-full max-w-xl"></div>
@@ -62,7 +62,9 @@ const Register = ({ data }) => {
         {/* <div className=" h-screen"> */}
         <Hero fluid={waiverBackground.childImageSharp.fluid}>
           <h1 className="leading-none mt-10 font-semibold text-center mx-3">
-            2020-21 Registration
+            2020-21
+            <br />
+            Registration
           </h1>
         </Hero>
         {/* Main Content */}
@@ -72,12 +74,12 @@ const Register = ({ data }) => {
           <PageSection className="mb-20">
             <h2 className="text-5xl text-center font-semibold">
               Registration for the 2020-2021 Fatbike &amp; Snowshoe season is
-              now open!
+              now open
             </h2>
           </PageSection>
           <PageSection className="text-3xl bg-gray-400 text-white py-10">
             <div className="mt-5 grid ">
-              <H3>Our 2020-2021 membership fees are as&nbsp;follows:</H3>
+              <H3>Our membership fees:</H3>
               <ul className="list-disc justify-self-center">
                 <Li>Single Fatbike - $75.00</Li>
                 <Li>Family Fatbike - $120.00</Li>
