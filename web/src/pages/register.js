@@ -45,7 +45,7 @@ const Emph = ({ children, className = "uppercase trackng-wide" }) => (
 )
 
 const PageSection = ({ children, className = "" }) => (
-  <div className={`pl-5 ${className}`}>
+  <div className={`p-5 ${className}`}>
     <div className={`flex mx-3 md:mx-10 lg:mx-32 justify-center`}>
       <div className="">{children}</div>
     </div>
