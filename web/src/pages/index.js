@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => {
           </p>
           <ButtonLink
             to="/register"
-            className=" text-4xl font-extrabold text-white  border-yellow-600 bg-yellow-600 justify-self-center  hover:bg-white hover:text-yellow-600 mt-10 px-8"
+            className=" text-4xl font-extrabold text-white  border-yellow-600 bg-yellow-600 justify-self-center  hover:bg-white hover:text-yellow-600 mt-10 px-8 text-center"
             text="REGISTER NOW"
           />
         </div>

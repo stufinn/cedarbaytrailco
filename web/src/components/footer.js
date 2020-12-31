@@ -46,20 +46,17 @@ export default ({ className }) => {
             <FaFacebook />
           </ExternalLink>
           <div>
-            Get in touch:&#160;
             <ExternalLink
               href="mailto:cedarbaytrailcompany@gmail.com"
               className="hover:text-yellow-600 "
             >
               {/* Hidden space allows for line breaking of email address on smaller screens */}
-              <span className="">
-                cedarbaytrailcompany<span className="lg:hidden"> </span>
-                @gmail.com
-              </span>
+              <span className="">Email us</span>
             </ExternalLink>
           </div>
           <div className="mt-2">
-            © {new Date().getFullYear()}, Cedar Bay Trail Co.
+            © {new Date().getFullYear()},<br className="lg:hidden" /> Cedar Bay
+            Trail Co.
           </div>
         </div>
         {/* Separator line */}
