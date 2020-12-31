@@ -3,7 +3,7 @@ import React from "react"
 const MapIframe = () => {
   return (
     <div className="grid my-10">
-      <h2 className="pb-5 text-center font-bold w-3/4 justify-self-center">
+      <h2 className="pb-5 text-center font-bold  md:w-3/4 justify-self-center">
         The trail head can be found at the Cedar Bay Recreational Complex
       </h2>
       <iframe
