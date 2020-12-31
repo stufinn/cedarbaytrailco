@@ -11,7 +11,9 @@ import { ExternalLink } from "../components/utilities"
 const linkStyle = "hover:text-yellow-600"
 
 const H3 = ({ children, className }) => (
-  <h3 className={`font-semibold mb-5 text-5xl text-center  ${className}`}>
+  <h3
+    className={`font-semibold mb-5 text-4xl md:text-5xl text-center  ${className}`}
+  >
     {children}
   </h3>
 )
@@ -68,11 +70,11 @@ const Register = ({ data }) => {
           </h1>
         </Hero>
         {/* Main Content */}
-        <div className="grid py-20">
+        <div className="grid py-10 lg:py-20">
           {/* Inner, "floating" container */}
           {/* <div className="m-20 lg:w-1/2 justify-self-center"> */}
-          <PageSection className="mb-20">
-            <h2 className="text-5xl text-center font-semibold">
+          <PageSection className="mb-10 lg:mb-20">
+            <h2 className="text-4xl lg:text-5xl text-center font-semibold leading-normal">
               Registration for the 2020-2021 Fatbike &amp; Snowshoe season is
               now open
             </h2>
