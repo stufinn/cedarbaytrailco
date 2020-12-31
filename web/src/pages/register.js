@@ -6,8 +6,9 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import ButtonLink from "../components/ButtonLink"
 import Hero from "../components/Hero"
+import { ExternalLink } from "../components/utilities"
 
-const linkStyle = "hover:text-yellow-500"
+const linkStyle = "hover:text-yellow-600"
 
 const H3 = ({ children, className }) => (
   <h3 className={`font-semibold mb-5 text-5xl text-center  ${className}`}>
@@ -19,20 +20,20 @@ const Li = ({ children, className = "grid" }) => (
   <li className={`mt-2 mb-5 ${className}`}>{children}</li>
 )
 
-const ExternalLink = ({
-  children = "EXTERNAL LINK TEXT",
-  href = "#",
-  className = "",
-}) => (
-  <a
-    href={`${href}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className={` underline hover:font-bold ${linkStyle} ${className}`}
-  >
-    {children}
-  </a>
-)
+// const ExternalLink = ({
+//   children = "EXTERNAL LINK TEXT",
+//   href = "#",
+//   className = "",
+// }) => (
+//   <a
+//     href={`${href}`}
+//     target="_blank"
+//     rel="noopener noreferrer"
+//     className={` underline hover:font-bold ${linkStyle} ${className}`}
+//   >
+//     {children}
+//   </a>
+// )
 
 const Emph = ({ children, className = "" }) => (
   <div className={`font-bold mb-2 ${className}   mt-10 text-4xl p-3`}>
@@ -92,7 +93,10 @@ const Register = ({ data }) => {
                 <Emph>Step&nbsp;1</Emph>{" "}
                 <IndentedItem>
                   E-Transfer the annual fee to{" "}
-                  <ExternalLink href="mailto:cedarbaytrailcompany@gmail.com">
+                  <ExternalLink
+                    href="mailto:cedarbaytrailcompany@gmail.com"
+                    className={linkStyle}
+                  >
                     {/* Hidden space allows for line breaking of email address on smaller screens */}
                     <span className="">
                       cedarbaytrailcompany<span className="lg:hidden"> </span>
