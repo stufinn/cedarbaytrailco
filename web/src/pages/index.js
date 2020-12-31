@@ -8,6 +8,8 @@ import Layout from "../components/layout"
 import BackgroundImage from "../components/backgroundImage"
 import ButtonLink from "../components/ButtonLink"
 import RegisterBar from "../components/registerBar"
+import MapIframe from "../components/MapIframe"
+import { TrailMap } from "../components/TrailMap"
 
 const IndexPage = ({ data }) => {
   const { logo } = data
@@ -23,10 +25,24 @@ const IndexPage = ({ data }) => {
 
       <RegisterBar className=" " />
       <div className="bg-gray-200 grid">
-        <div className=" grid  items-center col-span-2  justify-self-center mx-3 md:mx-10 my-16  py-12  ">
-          <h1 className="text-primary  text-center font-semibold text-5xl ">
-            <span className="md:text-6xl">Welcome to Cedar Bay Trail Co.</span>
+        <div className=" grid items-center w-full  justify-self-center px-3 md:px-10 my-16 ">
+          <h1 className="text-primary  text-center font-semibold text-5xl mb-10 leading-normal">
+            <span className="md:text-6xl ">
+              Welcome to our new website!
+              <br />
+              <span className="italic">✨ more features coming soon ✨</span>
+            </span>
           </h1>
+          <div className=" w-5/6 lg:w-3/4 justify-self-center">
+            {/* Trail Map */}
+            <TrailMap className=" " />
+            {/* Trail Map End */}
+
+            {/* Location Map */}
+            <MapIframe />
+            {/* Location Map End*/}
+          </div>
+
           <p className="text-4xl text-center mt-8">
             Before hitting the trails, please register online!
           </p>
