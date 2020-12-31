@@ -7,7 +7,7 @@ import { IoLogoFacebook } from "react-icons/io"
 import Layout from "../components/layout"
 import BackgroundImage from "../components/backgroundImage"
 import ButtonLink from "../components/ButtonLink"
-import RegisterBar from "../components/registerBar"
+import RegisterBar from "../components/RegisterBar"
 import MapIframe from "../components/MapIframe"
 import { TrailMap } from "../components/TrailMap"
 
