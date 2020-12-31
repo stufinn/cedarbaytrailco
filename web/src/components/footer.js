@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { FaHeart } from "react-icons/fa"
+import { FaHeart, FaFacebook } from "react-icons/fa"
 import { GrBike } from "react-icons/gr"
 import Img from "gatsby-image"
 
@@ -36,20 +36,34 @@ export default ({ className }) => {
 
       <div className="grid lg:grid-flow-col lg:grid-cols-2 justify-center ">
         <div className="grid text-center lg:text-left items-center font-bold">
-          <div>© {new Date().getFullYear()}, Cedar Bay Trail Co.</div>
+          {/* Facebook link */}
+
           <ExternalLink
-            href="mailto:cedarbaytrailcompany@gmail.com"
-            className="hover:text-yellow-600"
+            className="text-5xl my-2 hover:text-yellow-600 no-underline justify-self-center lg:justify-self-start flex items-end gap-x-2"
+            href="https://www.facebook.com/groups/326260264407436"
           >
-            {/* Hidden space allows for line breaking of email address on smaller screens */}
-            <span className="">
-              cedarbaytrailcompany<span className="lg:hidden"> </span>
-              @gmail.com
-            </span>
+            {/* <span className="text-2xl"> Visit us on Facebook</span> */}
+            <FaFacebook />
           </ExternalLink>
+          <div>
+            Get in touch:&#160;
+            <ExternalLink
+              href="mailto:cedarbaytrailcompany@gmail.com"
+              className="hover:text-yellow-600 "
+            >
+              {/* Hidden space allows for line breaking of email address on smaller screens */}
+              <span className="">
+                cedarbaytrailcompany<span className="lg:hidden"> </span>
+                @gmail.com
+              </span>
+            </ExternalLink>
+          </div>
+          <div className="mt-2">
+            © {new Date().getFullYear()}, Cedar Bay Trail Co.
+          </div>
         </div>
         {/* Separator line */}
-        <div className=" border border-yellow-600 lg:hidden justify-self-center w-1/2 my-5" />
+        <div className=" border border-yellow-600 lg:hidden w-1/2 my-5 justify-self-center" />
         {/* Separator line END */}
 
         <div className="flex flex-col md:flex-row  items-center justify-center lg:justify-end  gap-y-1 ">
