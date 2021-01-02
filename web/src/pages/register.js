@@ -10,6 +10,14 @@ import { ExternalLink } from "../components/utilities"
 
 const linkStyle = "hover:text-yellow-600"
 
+const H2 = ({ children, className }) => (
+  <h2
+    className={` border-b-2 pb-1 mb-3 font-semibold mt-5 text-3xl md:text-4xl  ${className}`}
+  >
+    {children}
+  </h2>
+)
+
 const H3 = ({ children, className }) => (
   <h3
     className={`font-semibold mb-5 text-4xl md:text-5xl text-center  ${className}`}
@@ -82,11 +90,17 @@ const Register = ({ data }) => {
           <PageSection className="text-3xl bg-gray-400 text-white py-10">
             <div className="mt-5 grid ">
               <H3>Our membership fees:</H3>
-              <ul className="list-disc justify-self-center">
-                <Li>Single Fatbike - $75.00</Li>
-                <Li>Family Fatbike - $120.00</Li>
-                <Li>Single Snowshoe User - $20.00</Li>
-                <Li>Snowshoe Family - $40.00</Li>
+              <H2>Annual</H2>
+              <ul className="list-disc ml-10">
+                <Li>Single Fatbike: $75.00</Li>
+                <Li>Family Fatbike: $120.00</Li>
+                <Li>Single Snowshoe: $20.00</Li>
+                <Li>Snowshoe Family: $40.00</Li>
+              </ul>
+              <H2>Daily</H2>
+              <ul className="list-disc ml-10">
+                <Li>Fatbike: $15.00</Li>
+                <Li>Snowshoe: $5.00</Li>
               </ul>
             </div>
           </PageSection>
@@ -96,7 +110,7 @@ const Register = ({ data }) => {
               <Li>
                 <Emph>Step&nbsp;1</Emph>{" "}
                 <IndentedItem>
-                  E-Transfer the annual fee to{" "}
+                  E-transfer your fee(s) to{" "}
                   <ExternalLink
                     href="mailto:cedarbaytrailcompany@gmail.com"
                     className={linkStyle}
@@ -110,7 +124,7 @@ const Register = ({ data }) => {
                 </IndentedItem>
               </Li>
               <Li>
-                <Emph>Step 2:</Emph>
+                <Emph>Step 2</Emph>
                 <IndentedItem>
                   <ExternalLink href="https://app.waiversign.com/e/5f995bf516eb010019446497/doc/5f99742ad56fea00190cafa3?event=none">
                     Sign and submit the online waiver
