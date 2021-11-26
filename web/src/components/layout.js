@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
       )}
 
       <NavBar />
-      <main className="grid">{children}</main>
+      <main className="grid flex-grow">{children}</main>
       <Footer className=" bg-black text-white text-2xl  " />
     </div>
   )
