@@ -34,8 +34,8 @@ module.exports = {
         name: `cedar-bay-trail-co`,
         short_name: `CBTC`,
         start_url: `/`,
-        background_color: `rgb(18, 47, 111)`,
-        theme_color: `rgb(18, 47, 111)`,
+        background_color: `rgb(255, 255, 255)`,
+        theme_color: `rgb(255, 255, 255)`,
         display: `minimal-ui`,
         icon: `src/images/CBTCo_square.png`, // This path is relative to the root of the site.
       },

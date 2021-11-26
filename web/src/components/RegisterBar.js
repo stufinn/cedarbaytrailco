@@ -8,12 +8,10 @@ const RegisterBar = ({ className }) => {
     >
       <div className="text-center">
         Before you ride or hike the trails, please be sure to&#160;
-        <LinkInternal
-          to="/register"
-          className="underline inline  hover:text-green-300"
-        >
+        <LinkInternal to="/register" className="underline inline">
           register online
         </LinkInternal>
+        .
       </div>
     </section>
   )

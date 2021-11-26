@@ -71,9 +71,7 @@ const Register = ({ data }) => {
         <SEO title="Registration" />
         {/* <div className=" h-screen"> */}
         <Hero fluid={waiverBackground.childImageSharp.fluid}>
-          <h1 className="leading-none mt-10 font-semibold text-center mx-3">
-            2020-21
-            <br />
+          <h1 className="uppercase tracking-wide leading-none mt-10 font-semibold text-center mx-3">
             Registration
           </h1>
         </Hero>
@@ -81,10 +79,10 @@ const Register = ({ data }) => {
         <div className="grid py-10 lg:py-20">
           {/* Inner, "floating" container */}
           {/* <div className="m-20 lg:w-1/2 justify-self-center"> */}
-          <PageSection className="mb-10 lg:mb-20">
-            <h2 className="text-4xl lg:text-5xl text-center font-semibold leading-normal">
-              Registration for the 2020-2021 Fatbike &amp; Snowshoe season is
-              now open
+          <PageSection className="mb-10 lg:mb-20 ">
+            <h2 className="text-4xl lg:text-5xl text-center font-semibold leading-normal md:max-w-4xl">
+              Registration for the 2022 Fatbike &amp; Snowshoe season is now
+              open!
             </h2>
           </PageSection>
           <PageSection className="text-3xl bg-gray-400 text-white py-10">
@@ -92,10 +90,10 @@ const Register = ({ data }) => {
               <H3>Our membership fees:</H3>
               <H2>Annual</H2>
               <ul className="list-disc ml-10">
-                <Li>Single Fatbike: $75.00</Li>
-                <Li>Family Fatbike: $120.00</Li>
-                <Li>Single Snowshoe: $20.00</Li>
-                <Li>Snowshoe Family: $40.00</Li>
+                <Li>Fatbike (Single): $80.00</Li>
+                <Li>Fatbike (Family): $150.00</Li>
+                <Li>Snowshoe (Single): $30.00</Li>
+                <Li>Snowshoe (Family): $50.00</Li>
               </ul>
               <H2>Daily</H2>
               <ul className="list-disc ml-10">
@@ -105,22 +103,17 @@ const Register = ({ data }) => {
             </div>
           </PageSection>
           <PageSection className="text-3xl py-10 ">
-            <H3>Registering for the season is a simple two step process.</H3>
+            <H3>Registration for the season is a three step process.</H3>
             <ol className="">
               <Li>
                 <Emph>Step&nbsp;1</Emph>{" "}
                 <IndentedItem>
-                  E-transfer your fee(s) to{" "}
-                  <ExternalLink
-                    href="mailto:cedarbaytrailcompany@gmail.com"
-                    className={linkStyle}
-                  >
-                    {/* Hidden space allows for line breaking of email address on smaller screens */}
-                    <span className="">
-                      cedarbaytrailcompany<span className="lg:hidden"> </span>
-                      @gmail.com
-                    </span>
-                  </ExternalLink>
+                  E-transfer your fee(s) to Cedar Bay Trail Co. at{" "}
+                  {/* Hidden space allows for line breaking of email address on smaller screens */}
+                  <span className="">
+                    cedarbaytrailcompany<span className="lg:hidden"> </span>
+                    @gmail.com
+                  </span>
                 </IndentedItem>
               </Li>
               <Li>
@@ -154,8 +147,7 @@ const Register = ({ data }) => {
               <Li>
                 <Emph>Step 3 </Emph>{" "}
                 <IndentedItem>
-                  <p>Ok we lied, there's one more step:</p>
-                  <p className="mt-10 ">
+                  <p>
                     <span className="italic">Go hit those trails!</span> 🚲 ❄
                   </p>
                 </IndentedItem>

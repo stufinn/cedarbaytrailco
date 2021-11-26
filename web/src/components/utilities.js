@@ -18,7 +18,7 @@ export const ExternalLink = ({
     href={`${href}`}
     target="_blank"
     rel="noopener noreferrer"
-    className={` underline hover:font-bold  ${className}`}
+    className={` underline hover:font-bold ${className}`}
   >
     {children}
   </a>
