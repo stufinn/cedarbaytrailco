@@ -1,14 +1,18 @@
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import { useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import { ModalContext } from "../context/ModalContext"
 
 export const TrailMap = ({ className = "" }) => {
+  const { openModal } = useContext(ModalContext)
   const [overlayVisible, setOverlayVisible] = useState(false)
   const data = useStaticQuery(graphql`
     query TrailMap {
-      trailMap: file(relativePath: { eq: "cedar bay trail map 2 pp.jpg" }) {
+      trailMapSm: file(
+        relativePath: { eq: "Cedar_Bay_fatbike_trail_map_2021.png" }
+      ) {
         childImageSharp {
-          fluid {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -16,12 +20,12 @@ export const TrailMap = ({ className = "" }) => {
     }
   `)
 
-  const { trailMap } = data
-  debugger
+  const { trailMapSm } = data
+
   return (
     <>
-      <div className={`${className}`}>
-        <Img fluid={trailMap.childImageSharp.fluid} />
+      <div className={` max-w-2xl ${className}`} onClick={() => openModal()}>
+        <Img fluid={trailMapSm.childImageSharp.fluid} />
       </div>
       {/* {!overlayVisible && (
         <div className="bg-gray-600 bg-opacity-75">Overlay is visible</div>

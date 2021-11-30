@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => {
           </p>
           <div className=" w-5/6 lg:w-3/4 justify-self-center mt-10">
             {/* Trail Map */}
-            <TrailMap className=" " />
+            <TrailMap />
             {/* Trail Map End */}
 
             {/* Location Map */}

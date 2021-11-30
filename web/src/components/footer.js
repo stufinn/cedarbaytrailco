@@ -21,7 +21,7 @@ export default ({ className }) => {
   `)
 
   const { borealisLogo } = data
-  debugger
+
   return (
     <footer className={`grid py-3 px-10 ${className}`}>
       {/* <a
