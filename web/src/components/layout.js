@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className={` relative grid   `}>
+    <div className={`relative flex flex-col min-h-screen   `}>
       {isModalVisible && (
         <div className="fixed flex justify-center items-center top-0 right-0 bottom-0 left-0 w-full bg-black bg-opacity-75 z-20 ">
           <div
@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
       )}
 
       <NavBar />
-      <main className="grid flex-grow">{children}</main>
+      <main className="grid  flex-grow ">{children}</main>
       <Footer className=" bg-black text-white text-2xl  " />
     </div>
   )
