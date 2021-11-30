@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react"
 
 const defaultValues = {
-  isModalVisible: true,
+  isModalVisible: false,
   closeModal: () => console.log("CLOSE MODAL"),
   openModal: () => console.log("OPEN MODAL"),
 }

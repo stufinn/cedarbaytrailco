@@ -5,7 +5,7 @@ import { ModalContext } from "../context/ModalContext"
 
 export const TrailMap = ({ className = "" }) => {
   const { openModal } = useContext(ModalContext)
-  const [overlayVisible, setOverlayVisible] = useState(false)
+
   const data = useStaticQuery(graphql`
     query TrailMap {
       trailMapSm: file(
@@ -24,7 +24,10 @@ export const TrailMap = ({ className = "" }) => {
 
   return (
     <>
-      <div className={` max-w-2xl ${className}`} onClick={() => openModal()}>
+      <div
+        className={` cursor-pointer justify-self-center w-full max-w-2xl ${className}`}
+        onClick={() => openModal()}
+      >
         <Img fluid={trailMapSm.childImageSharp.fluid} />
       </div>
       {/* {!overlayVisible && (

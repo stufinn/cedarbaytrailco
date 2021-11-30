@@ -37,25 +37,21 @@ const Layout = ({ children }) => {
 
   return (
     <div className={` relative grid   `}>
-      <div>
-        {isModalVisible && (
+      {isModalVisible && (
+        <div className="fixed flex justify-center items-center top-0 right-0 bottom-0 left-0 w-full bg-black bg-opacity-75 z-20">
           <div
-            onClick={() => console.log("CLOSE")}
-            className="fixed flex justify-center items-center top-0 right-0 bottom-0 left-0 w-full bg-black bg-opacity-75 z-20"
+            onClick={() => closeModal}
+            className=" border-2 hover:bg-white hover:text-black flex justify-center items-center w-10 h-10 rounded-full absolute top-0 right-0 text-white mt-3 mr-3 text-2xl z-30 cursor-pointer"
           >
-            <div
-              onClick={() => closeModal}
-              className=" border-2 hover:bg-white hover:text-black flex justify-center items-center w-10 h-10 rounded-full absolute top-0 right-0 text-white mt-3 mr-3 text-2xl z-30 cursor-pointer"
-            >
-              X
-            </div>
-            {/* div is for use of ref (MODAL) */}
-            <div ref={ref} className="w-full max-w-6xl">
-              <GatsbyImage fluid={data.trailMapLg.childImageSharp.fluid} />
-            </div>
+            X
           </div>
-        )}
-      </div>
+          {/* div is for use of ref (MODAL - click outside to close) */}
+          <div ref={ref} className="w-full max-w-6xl max-h-screen">
+            <GatsbyImage fluid={data.trailMapLg.childImageSharp.fluid} />
+          </div>
+        </div>
+      )}
+
       <NavBar />
       <main className="grid">{children}</main>
       <Footer className=" bg-black text-white text-2xl  " />

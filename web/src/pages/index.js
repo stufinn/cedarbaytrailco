@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => {
             Additional features coming soon: <br />
             Trail condition reports, Event updates, and more!
           </p>
-          <div className=" w-5/6 lg:w-3/4 justify-self-center mt-10">
+          <div className=" w-5/6 lg:w-3/4 justify-self-center mt-10 grid">
             {/* Trail Map */}
             <TrailMap />
             {/* Trail Map End */}
