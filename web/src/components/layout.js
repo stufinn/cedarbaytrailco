@@ -15,9 +15,11 @@ import NavBar from "./navbar/navbar"
 import Footer from "./footer"
 import { ModalContext } from "../context/ModalContext"
 import GatsbyImage from "gatsby-image"
+import useComponentVisible from "./hooks/useComponentVisible"
 
 const Layout = ({ children }) => {
   const { isModalVisible, closeModal } = useContext(ModalContext)
+  const { ref } = useComponentVisible(true)
 
   const data = useStaticQuery(graphql`
     query LayoutQuery {
@@ -38,13 +40,19 @@ const Layout = ({ children }) => {
       <div>
         {isModalVisible && (
           <div
-            onClick={() => closeModal()}
-            className="fixed flex justify-center items-center top-0 right-0 bottom-0 left-0 w-full bg-black bg-opacity-75 z-30"
+            onClick={() => console.log("CLOSE")}
+            className="fixed flex justify-center items-center top-0 right-0 bottom-0 left-0 w-full bg-black bg-opacity-75 z-20"
           >
-            <GatsbyImage
-              fluid={data.trailMapLg.childImageSharp.fluid}
-              className="w-full max-w-5xl"
-            />
+            <div
+              onClick={() => closeModal}
+              className=" border-2 hover:bg-white hover:text-black flex justify-center items-center w-10 h-10 rounded-full absolute top-0 right-0 text-white mt-3 mr-3 text-2xl z-30 cursor-pointer"
+            >
+              X
+            </div>
+            {/* div is for use of ref (MODAL) */}
+            <div ref={ref} className="w-full max-w-6xl">
+              <GatsbyImage fluid={data.trailMapLg.childImageSharp.fluid} />
+            </div>
           </div>
         )}
       </div>
