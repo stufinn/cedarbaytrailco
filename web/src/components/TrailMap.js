@@ -25,7 +25,7 @@ export const TrailMap = ({ className = "" }) => {
   return (
     <>
       <div
-        className={` cursor-pointer justify-self-center w-full max-w-2xl ${className}`}
+        className={` cursor-pointer justify-self-center w-full ${className}`}
         onClick={() => openModal()}
       >
         <Img fluid={trailMapSm.childImageSharp.fluid} />
