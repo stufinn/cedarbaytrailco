@@ -2,16 +2,16 @@ import React from "react"
 
 const trails = [
   {
+    name: "Lollipop",
+    status: "green",
+    notes: "Some notes",
+    updated: "November 16, 10:21pm",
+  },
+  {
     name: "Candy Land",
     status: "red",
     notes:
       "Hiking the trails with snowshoes would help pack down the snow. Use 'em if you got 'em!",
-    updated: "November 16, 10:21pm",
-  },
-  {
-    name: "Lollipop",
-    status: "green",
-    notes: "Some notes",
     updated: "November 16, 10:21pm",
   },
   {
