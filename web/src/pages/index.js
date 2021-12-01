@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => {
           <div className="  justify-self-center mt-10 grid">
             {/* Trail Map */}
             <div className="flex-col lg:flex-row flex items-center lg:items-start justify-center relative">
-              <TrailMap className=" sticky top-2 shadow-lg" />
+              <TrailMap className=" lg:sticky lg:top-2 shadow-lg" />
 
               <TrailConditionsWidget />
             </div>

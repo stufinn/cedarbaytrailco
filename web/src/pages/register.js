@@ -71,7 +71,7 @@ const Register = ({ data }) => {
         <SEO title="Registration" />
         {/* <div className=" h-screen"> */}
         <Hero fluid={waiverBackground.childImageSharp.fluid}>
-          <h1 className="uppercase tracking-wide leading-none mt-10 font-semibold text-center mx-3">
+          <h1 className="uppercase  text-4xl lg:text-6xl tracking-wide leading-none mt-10 font-semibold text-center mx-3">
             Registration
           </h1>
         </Hero>
