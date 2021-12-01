@@ -27,20 +27,17 @@ const IndexPage = ({ data }) => {
       <RegisterBar className=" " />
       <div className="bg-gray-200 grid">
         <div className=" grid items-center w-full  justify-self-center px-3 md:px-10 my-16 ">
-          <h1 className="text-primary  text-center font-semibold text-5xl  leading-normal">
-            <span className="md:text-6xl">
-              Welcome!
-              <br />
-            </span>
+          <h1 className="text-primary  text-center font-semibold text-6xl  leading-none mb-10">
+            Welcome to Cedar Bay Trail&nbsp;Co.
           </h1>
-          <p className="italic font-bold text-center text-3xl mt-3 ">
+          {/* <p className="italic font-bold text-center text-3xl mt-3 ">
             Additional features coming soon: <br />
-            Trail condition reports, event updates, and more!
-          </p>
+            Trail condition reports, Event updates, and more!
+          </p> */}
           <div className="  justify-self-center mt-10 grid">
             {/* Trail Map */}
-            <div className="flex-col lg:flex-row flex items-center lg:items-start justify-center">
-              <TrailMap className="shadow-lg" />
+            <div className="flex-col lg:flex-row flex items-center lg:items-start justify-center relative">
+              <TrailMap className=" sticky top-2 shadow-lg" />
 
               <TrailConditionsWidget />
             </div>
@@ -52,7 +49,7 @@ const IndexPage = ({ data }) => {
           </div>
 
           <p className="text-4xl text-center mt-8">
-            Before hitting the trails, please register online
+            Before hitting the trails, please register:
           </p>
           <ButtonLink
             to="/register"

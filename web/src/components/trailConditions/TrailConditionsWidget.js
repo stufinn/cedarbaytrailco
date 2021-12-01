@@ -56,10 +56,10 @@ const Status = ({ status = "green" }) => {
 
 const TrailConditionsWidget = () => {
   return (
-    <div className="max-w-2xl lg:max-w-xs lg:ml-3 mt-5 lg:mt-0">
-      <div className="font-bold text-2xl text-center italic mb-3">
+    <div className="max-w-2xl lg:max-w-xs lg:ml-3 mt-5 lg:mt-2">
+      {/* <div className="font-bold text-2xl text-center italic mb-3">
         Trail Conditions
-      </div>
+      </div> */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 justify-start ">
         {trails.map(({ name, status, notes, updated }) => {
           return (
