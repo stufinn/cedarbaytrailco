@@ -10,6 +10,7 @@ import ButtonLink from "../components/ButtonLink"
 import RegisterBar from "../components/RegisterBar"
 import MapIframe from "../components/MapIframe"
 import { TrailMap } from "../components/TrailMap"
+import TrailConditionsWidget from "../components/trailConditions/TrailConditionsWidget"
 
 const IndexPage = ({ data }) => {
   const { logo } = data
@@ -36,9 +37,13 @@ const IndexPage = ({ data }) => {
             Additional features coming soon: <br />
             Trail condition reports, Event updates, and more!
           </p>
-          <div className=" w-5/6 lg:w-3/4 justify-self-center mt-10 grid">
+          <div className="  justify-self-center mt-10 grid">
             {/* Trail Map */}
-            <TrailMap />
+            <div className="flex-col lg:flex-row flex justify-center">
+              <TrailMap />
+
+              <TrailConditionsWidget />
+            </div>
             {/* Trail Map End */}
 
             {/* Location Map */}
