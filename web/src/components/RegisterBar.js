@@ -9,7 +9,7 @@ const RegisterBar = ({ className }) => {
       <div className="text-center">
         Before you ride or hike the trails, please be sure to&#160;
         <LinkInternal to="/register" className="underline inline">
-          register online
+          register
         </LinkInternal>
         .
       </div>
