@@ -12,20 +12,20 @@ const trails = [
     status: "red",
     notes:
       "Hiking the trails with snowshoes would help pack down the snow. Use 'em if you got 'em!",
-    updated: "November 16, 10:21pm",
+    updated: "November 16, 10:25pm",
   },
   {
     name: "Ninja Squirrel",
     status: "yellow",
     notes: "",
-    updated: "November 16, 10:21pm",
+    updated: "November 16, 10:28pm",
   },
   {
     name: "Roller Coaster",
     status: "yellow",
     notes:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum expedita quaerat dolorum quod cupiditate officiis numquam alias, nihil, pariatur saepe sapiente vero incidunt nemo enim! Eveniet quia ducimus quam!",
-    updated: "November 16, 10:21pm",
+    updated: "November 16, 10:30pm",
   },
 ]
 
