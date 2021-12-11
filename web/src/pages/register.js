@@ -87,7 +87,7 @@ const Register = ({ data }) => {
           </PageSection>
           <PageSection className="text-3xl bg-gray-400 text-white py-10">
             <div className="mt-5 grid ">
-              <H3>Our membership fees:</H3>
+              <H3>Suggested contribution:</H3>
               <H2>Annual</H2>
               <ul className="list-disc ml-10">
                 <Li>Fatbike (Single): $80.00</Li>
@@ -108,7 +108,7 @@ const Register = ({ data }) => {
               <Li>
                 <Emph>Step&nbsp;1</Emph>{" "}
                 <IndentedItem>
-                  E-transfer your fee(s) to Cedar Bay Trail Co. at{" "}
+                  E-transfer your contribution(s) to Cedar Bay Trail Co. at{" "}
                   {/* Hidden space allows for line breaking of email address on smaller screens */}
                   <span className="">
                     cedarbaytrailcompany<span className="lg:hidden"> </span>
