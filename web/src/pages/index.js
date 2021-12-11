@@ -30,16 +30,16 @@ const IndexPage = ({ data }) => {
           <h1 className="text-primary  text-center font-semibold text-6xl  leading-none mb-10">
             Welcome to Cedar Bay Trail&nbsp;Co.
           </h1>
-          {/* <p className="italic font-bold text-center text-3xl mt-3 ">
+          <p className="italic font-bold text-center text-3xl mt-3 ">
             Additional features coming soon: <br />
             Trail condition reports, Event updates, and more!
-          </p> */}
+          </p>
           <div className="  justify-self-center mt-10 grid">
             {/* Trail Map */}
             <div className="flex-col lg:flex-row flex items-center lg:items-start justify-center relative">
               <TrailMap className=" lg:sticky lg:top-2 shadow-lg" />
 
-              <TrailConditionsWidget />
+              {/* <TrailConditionsWidget /> */}
             </div>
             {/* Trail Map End */}
 
