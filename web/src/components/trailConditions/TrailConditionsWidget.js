@@ -4,28 +4,26 @@ const trails = [
   {
     name: "Lollipop",
     status: "green",
-    notes: "Some notes",
-    updated: "November 16, 10:21pm",
+    notes: "",
+    updated: "December 10, 2021",
   },
   {
     name: "Candyland",
-    status: "red",
-    notes:
-      "Hiking the trails with snowshoes would help pack down the snow. Use 'em if you got 'em!",
-    updated: "November 16, 10:25pm",
+    status: "green",
+    notes: "",
+    updated: "December 10, 2021",
   },
   {
     name: "Ninja Squirrel",
-    status: "yellow",
+    status: "green",
     notes: "",
-    updated: "November 16, 10:28pm",
+    updated: "December 10, 2021",
   },
   {
     name: "Roller Coaster",
-    status: "yellow",
-    notes:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laborum expedita quaerat dolorum quod cupiditate officiis numquam alias, nihil, pariatur saepe sapiente vero incidunt nemo enim! Eveniet quia ducimus quam!",
-    updated: "November 16, 10:30pm",
+    status: "green",
+    notes:"",
+    updated: "December 10, 2021",
   },
 ]
 
@@ -56,7 +54,7 @@ const Status = ({ status = "green" }) => {
 
 const TrailConditionsWidget = () => {
   return (
-    <div className="max-w-2xl lg:max-w-xs lg:ml-3 mt-5 lg:mt-2">
+    <div className="max-w-2xl lg:max-w-xs lg:ml-3 mt-5 lg:mt-2  min-w-250">
       {/* <div className="font-bold text-2xl text-center italic mb-3">
         Trail Conditions
       </div> */}

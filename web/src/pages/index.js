@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => {
             <div className="flex-col lg:flex-row flex items-center lg:items-start justify-center relative">
               <TrailMap className=" lg:sticky lg:top-2 shadow-lg" />
 
-              {/* <TrailConditionsWidget /> */}
+              <TrailConditionsWidget />
             </div>
             {/* Trail Map End */}
 
