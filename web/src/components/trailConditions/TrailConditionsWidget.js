@@ -4,25 +4,25 @@ const trails = [
   {
     name: "Lollipop",
     status: "green",
-    notes: "",
+    notes: "Groomed Dec 10 5-6pm.",
     updated: "December 10, 2021",
   },
   {
     name: "Candyland",
     status: "green",
-    notes: "",
+    notes: "Groomed Dec 10 5-6pm.",
     updated: "December 10, 2021",
   },
   {
     name: "Ninja Squirrel",
     status: "green",
-    notes: "",
+    notes: "Groomed Dec 10 5-6pm.",
     updated: "December 10, 2021",
   },
   {
     name: "Roller Coaster",
     status: "green",
-    notes:"",
+    notes:"Groomed Dec 10 5-6pm.",
     updated: "December 10, 2021",
   },
 ]
