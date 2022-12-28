@@ -81,7 +81,7 @@ const Register = ({ data }) => {
           {/* <div className="m-20 lg:w-1/2 justify-self-center"> */}
           <PageSection className="mb-10 lg:mb-20 ">
             <h2 className="text-4xl lg:text-5xl text-center font-semibold leading-normal md:max-w-4xl">
-              Registration for the 2022 Fatbike &amp; Snowshoe season is now
+              Registration for the 2023 Fatbike &amp; Snowshoe season is now
               open!
             </h2>
           </PageSection>
