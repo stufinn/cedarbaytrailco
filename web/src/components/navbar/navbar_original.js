@@ -33,12 +33,10 @@ const NavBar = () => {
     }
   `)
 
-  console.log(navbarData)
-
   const logo = navbarData.defaultLogoQuery
     ? navbarData.defaultLogoQuery.logoImage.asset.fluid
     : navbarData.navLogoQuery.edges[0].node.childImageSharp.fluid
-  console.log("LOGO", logo)
+
   const mobileLogo = logo
 
   const navLinks = [
@@ -69,7 +67,7 @@ const NavBar = () => {
     return setActiveBurger(!activeBurger)
   }
 
-  const navbarItems = navLinks.map(link => (
+  const navbarItems = navLinks.map((link) => (
     <div className="navbar__ItemContainer" key={link.key}>
       <NavbarItem
         handle={link.handle}

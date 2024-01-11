@@ -7,10 +7,8 @@ import urlBuilder from "@sanity/image-url"
 
 import FeatureImage from "../components/FeatureImage"
 
-const MoreInfo = props => {
-  console.log("style", props.moreInfoImage)
-
-  const urlFor = source =>
+const MoreInfo = (props) => {
+  const urlFor = (source) =>
     urlBuilder({
       projectId: "ij3w87az",
       dataset: "production",
@@ -18,7 +16,7 @@ const MoreInfo = props => {
 
   const serializer = {
     types: {
-      inlineImage: props => (
+      inlineImage: (props) => (
         <figure className="image">
           <img
             alt={props.node.alt}

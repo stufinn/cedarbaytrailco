@@ -1,10 +1,11 @@
 import React from "react"
 import BlockContentPrimary from "../components/block content/blockContentPrimary"
 import Layout from "../components/layout"
+import { graphql } from "gatsby"
 
 const CustomPageTemplate = ({ data }) => {
   const { title, _rawMainContent: rawMainContent } = data.sanityCustomPage
-  console.log(rawMainContent)
+
   return (
     <Layout>
       This is a custom page! The title is: {title}

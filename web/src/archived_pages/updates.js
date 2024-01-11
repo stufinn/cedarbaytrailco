@@ -7,7 +7,6 @@ import SEO from "../components/seo"
 
 const BlogPage = ({ data }) => {
   const blogPosts = data.allSanityBlogPost.edges
-  console.log(data)
 
   const [postCount, setpostCount] = useState(3)
 
@@ -38,7 +37,7 @@ const BlogPage = ({ data }) => {
             <span className="settings__textEmph">Updates</span>
           </h1>
           <div className="blog__posts">
-            {displayBlogPosts.map(post => {
+            {displayBlogPosts.map((post) => {
               /* check if featureImage exists on query, if so, add fluid property, if not assign null */
 
               const fluid = post.node.featureImage

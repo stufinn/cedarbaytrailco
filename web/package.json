@@ -50,7 +50,8 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "tailwind": "postcss src/styles/tailwind.css -o src/styles/built.css",
-    "watch": "watch 'npm run tailwind' ./src/styles"
+    "watch": "watch 'npm run tailwind' ./src/styles",
+    "preinstall": "node --version | grep 'v12.18' || (echo 'requires Node.js version 12.18' && exit 1)"
   },
   "repository": {
     "type": "git",

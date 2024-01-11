@@ -7,8 +7,6 @@
 
 import React, { useContext } from "react"
 import PropTypes from "prop-types"
-// import { useStaticQuery, graphql } from "gatsby"
-// import "../styles/components/_layout.scss"
 import { graphql, useStaticQuery } from "gatsby"
 
 import NavBar from "./navbar/navbar"
@@ -42,6 +40,8 @@ const Layout = ({ children }) => {
           <div
             onClick={() => closeModal}
             className=" border-2 hover:bg-white hover:text-black flex justify-center items-center w-10 h-10 rounded-full absolute top-0 right-0 text-white mt-3 mr-3 text-2xl z-30 cursor-pointer"
+            role="button"
+            tabIndex={0}
           >
             X
           </div>

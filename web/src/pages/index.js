@@ -1,8 +1,7 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
-import { IoLogoFacebook } from "react-icons/io"
 
 import Layout from "../components/layout"
 import BackgroundImage from "../components/backgroundImage"
@@ -10,7 +9,6 @@ import ButtonLink from "../components/ButtonLink"
 import RegisterBar from "../components/RegisterBar"
 import MapIframe from "../components/MapIframe"
 import { TrailMap } from "../components/TrailMap"
-import TrailConditionsWidget from "../components/trailConditions/TrailConditionsWidget"
 
 const IndexPage = ({ data }) => {
   const { logo } = data
@@ -30,10 +28,10 @@ const IndexPage = ({ data }) => {
           <h1 className="text-primary  text-center font-semibold text-6xl  leading-none mb-10">
             Welcome to Cedar Bay Trail&nbsp;Co.
           </h1>
-          <p className="italic font-bold text-center text-3xl mt-3 ">
+          {/* <p className="italic font-bold text-center text-3xl mt-3 ">
             Additional features coming soon: <br />
             Trail condition reports, Event updates, and more!
-          </p>
+          </p> */}
           <div className="  justify-self-center mt-10 grid">
             {/* Trail Map */}
             <div className="flex-col lg:flex-row flex items-center lg:items-start justify-center relative">

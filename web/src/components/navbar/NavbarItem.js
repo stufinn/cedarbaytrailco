@@ -12,7 +12,7 @@ const NavbarItem = ({
   className = "",
 }) => {
   const navLinkClass = `text-black text-center group-hover:bg-blue-light group-hover:text-green-300 text-xl h-full grid items-center py-2 ${className}`
-  // console.log(handle)
+
   return (
     // "group" allows for child elements to be affected by hover over a parent element
     // https://tailwindcss.com/docs/pseudo-class-variants#group-hover

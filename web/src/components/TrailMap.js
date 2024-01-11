@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react"
-import { useStaticQuery } from "gatsby"
+import React, { useContext } from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { ModalContext } from "../context/ModalContext"
 import { FaHandPointer } from "react-icons/fa"
@@ -29,13 +29,14 @@ export const TrailMap = ({ className = "" }) => {
         className={`relative cursor-pointer justify-self-center w-full ${className}`}
         onClick={() => openModal()}
         title="Click for larger map"
+        role="button"
+        tabIndex={0} // Add tabIndex attribute to make it tabbable
       >
         <Img fluid={trailMapSm.childImageSharp.fluid} />
-        <div className="hidden md:block absolute flex bottom-0 right-0 bg-white rounded-full p-2 mb-2 mr-2  text-red-500 items-center animate-bounce"><FaHandPointer className=""/></div>
+        <div className="hidden md:block absolute flex bottom-0 right-0 bg-white rounded-full p-2 mb-2 mr-2  text-red-500 items-center animate-bounce">
+          <FaHandPointer className="" />
+        </div>
       </div>
-      {/* {!overlayVisible && (
-        <div className="bg-gray-600 bg-opacity-75">Overlay is visible</div>
-      )} */}
     </>
   )
 }

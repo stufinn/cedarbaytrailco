@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { FaHeart, FaFacebook } from "react-icons/fa"
-import { GrBike } from "react-icons/gr"
 import Img from "gatsby-image"
 
 import { ExternalLink } from "./utilities"
