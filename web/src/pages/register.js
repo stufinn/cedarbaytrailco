@@ -57,7 +57,7 @@ const Register = ({ data }) => {
         <div className="grid py-10 lg:py-20">
           <PageSection className="mb-10 lg:mb-20 ">
             <h2 className="text-4xl lg:text-5xl text-center font-semibold leading-normal md:max-w-4xl">
-              Registration for the 2024 Fatbike &amp; Snowshoe season is now
+              Registration for the 2025 Fatbike &amp; Snowshoe season is now
               open!
             </h2>
           </PageSection>
